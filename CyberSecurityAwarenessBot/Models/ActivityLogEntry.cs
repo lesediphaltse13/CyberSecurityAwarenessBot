@@ -1,8 +1,11 @@
-﻿namespace CyberSecurityAwarenessBot.Models;
-
-public class ActivityLogEntry
+﻿namespace CyberSecurityAwarenessBot.Models
 {
-    public DateTime TimeStamp { get; set; }
+    public class ActivityLogEntry
+    {
+        public int LogId { get; set; }
 
-    public string Action { get; set; }
+        public string ActionDescription { get; set; }
+
+        public DateTime ActionDate { get; set; }
+    }
 }

@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MySql.Data.MySqlClient;
 
 namespace CyberSecurityAwarenessBot.Data
 {
-    internal class DatabaseService
+    public class DatabaseService
     {
+        private readonly string _connectionString =
+            "server=localhost;database=CyberSecurityChatbotDB;uid=root;pwd=#Sedi1412;";
+
+        public MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(_connectionString);
+        }
     }
 }
-

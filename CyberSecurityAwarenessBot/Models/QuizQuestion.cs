@@ -1,12 +1,15 @@
-﻿namespace CyberSecurityAwarenessBot.Models;
+﻿using System.Collections.Generic;
 
-public class QuizQuestion
+namespace CyberSecurityAwarenessBot.Models
 {
-    public string Question { get; set; }
+    public class QuizQuestion
+    {
+        public string Question { get; set; }
 
-    public List<string> Answers { get; set; }
+        public List<string> Answers { get; set; }
 
-    public int CorrectAnswer { get; set; }
+        public int CorrectAnswer { get; set; }
 
-    public string Explanation { get; set; }
+        public string Explanation { get; set; }
+    }
 }
