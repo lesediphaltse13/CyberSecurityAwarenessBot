@@ -75,7 +75,8 @@
                 <Button Grid.Column="1"
                         Name="SendButton"
                         Content="Send"
-                        Margin="10"/>
+                        Margin="10"
+                        Click="SendButton_Click"/>
 
             </Grid>
 

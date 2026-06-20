@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CyberSecurityAwarenessBot.Services
+﻿namespace CyberSecurityAwarenessBot.Services
 {
-    internal class MemoryService
+    public class MemoryService
     {
+        public string UserName { get; set; }
+        public string FavouriteTopic { get; set; }
     }
 }
